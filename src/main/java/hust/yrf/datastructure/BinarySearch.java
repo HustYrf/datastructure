@@ -27,7 +27,7 @@ public class BinarySearch {
         if(high<low) return -1;
         int middle = (low + high )/2;
         if(value>arrs[middle]){
-            return recursiveSearch(arrs,value,middle+1,high);
+             return recursiveSearch(arrs,value,middle+1,high);
         }else if(value<arrs[middle]){
             return recursiveSearch(arrs,value,low,middle-1);
         }else {
